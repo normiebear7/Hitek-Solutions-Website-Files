@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | HiTek Solutions</title>
+  <meta name="description" content="Contact HiTek Solutions for PLC troubleshooting, controls upgrades, machine vision, and AI-enabled support services." />
+  <link rel="canonical" href="https://hiteksol.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact HiTek Solutions" />
+  <meta property="og:description" content="Request support for PLC troubleshooting, controls integration, machine vision, and AI-enabled technical services." />
+  <meta property="og:url" content="https://hiteksol.com/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact | HiTek Solutions" />
+  <meta name="twitter:description" content="Talk with HiTek Solutions about industrial automation support and project delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "HiTek Solutions",
+    "url": "https://hiteksol.com/contact.html",
+    "email": "techs@hiteksol.com",
+    "telephone": "+1-203-980-8698",
+    "areaServed": "Northeast United States",
+    "serviceType": [
+      "Industrial automation services",
+      "PLC troubleshooting",
+      "Controls integration",
+      "Machine vision support"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+        <a class="brand" href="index.html">
+          <img class="brand-logo" src="assets/images/Logo.png" alt="HiTek Solutions logo" />
+          <span>HiTek Solutions</span>
+        </a>
+      <button class="menu-toggle" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="ai-data-solutions.html">AI + Data</a>
+        <a href="resources.html">Resources</a>
+        <a href="about.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container split">
+      <section class="panel reveal">
+        <span class="kicker">Start The Conversation</span>
+        <h1>Let’s Solve The Right Problem First</h1>
+        <p>Share your current system, symptoms, and urgency. We will align on scope and the best next action.</p>
+        <div class="section">
+          <p><strong>Email:</strong> techs@hiteksol.com</p>
+          <p><strong>Phone:</strong> 203-980-8698</p>
+          <p><strong>Coverage:</strong> Connecticut and the Northeast region of the U.S.</p>
+        </div>
+        <p>Before submitting, you can review our <a href="services.html">PLC troubleshooting and controls integration services</a> or our <a href="ai-data-solutions.html">AI for manufacturing support solutions</a> to align your request with the right path.</p>
+      </section>
+
+      <section class="panel reveal">
+        <h3>Project Intake</h3>
+        <p id="submit-status" style="display:none;margin:0 0 1rem;padding:.7rem .85rem;border:1px solid #15968b;border-radius:10px;background:#e9fbf8;color:#0c5e56;font-weight:600;"></p>
+        <form id="contact-form" action="https://formsubmit.co/techs@hiteksol.com" method="POST">
+          <input type="hidden" name="_subject" value="HiTek Website Contact Request" />
+          <input type="hidden" name="_next" value="https://hiteksol.com/contact.html?submitted=1" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <label for="company">Company</label><br />
+          <input id="company" name="company" type="text" style="width:100%;margin:.35rem 0 .85rem;padding:.62rem;border:1px solid #c6d4dd;border-radius:8px;" />
+
+          <label for="name">Name</label><br />
+          <input id="name" name="name" type="text" required style="width:100%;margin:.35rem 0 .85rem;padding:.62rem;border:1px solid #c6d4dd;border-radius:8px;" />
+
+          <label for="email">Email</label><br />
+          <input id="email" name="email" type="email" required style="width:100%;margin:.35rem 0 .85rem;padding:.62rem;border:1px solid #c6d4dd;border-radius:8px;" />
+
+          <label for="summary">Project / Problem Summary</label><br />
+          <textarea id="summary" name="summary" rows="6" required style="width:100%;margin:.35rem 0 .85rem;padding:.62rem;border:1px solid #c6d4dd;border-radius:8px;"></textarea>
+
+          <button id="submit-btn" class="btn btn-primary" type="submit">Submit Request</button>
+        </form>
+        <p style="margin-top:.75rem;color:#4d5f66;font-size:.9rem;">Request submissions are sent to techs@hiteksol.com. If submission fails, please email directly.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+        <div class="footer-brand">
+          <img class="footer-logo" src="assets/images/Logo.png" alt="HiTek Solutions logo" />
+          <span>© <span data-year></span> HiTek Solutions</span>
+        </div>
+      <div>Request Consultation • Get Technical Guidance</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById("contact-form");
+      var status = document.getElementById("submit-status");
+      var submitBtn = document.getElementById("submit-btn");
+
+      if (!form || !status || !submitBtn) {
+        return;
+      }
+
+      var showStatus = function (message, isError) {
+        status.textContent = message;
+        status.style.display = "block";
+        status.style.background = isError ? "#fff0f0" : "#e9fbf8";
+        status.style.borderColor = isError ? "#d44" : "#15968b";
+        status.style.color = isError ? "#8b1c1c" : "#0c5e56";
+      };
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        if (!form.reportValidity()) {
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+        status.style.display = "none";
+
+        var data = new FormData(form);
+
+        try {
+          var response = await fetch("https://formsubmit.co/ajax/techs@hiteksol.com", {
+            method: "POST",
+            body: data,
+            headers: {
+              Accept: "application/json"
+            }
+          });
+
+          if (!response.ok) {
+            throw new Error("Request failed");
+          }
+
+          showStatus("Thank you. Your request was sent successfully.", false);
+          form.reset();
+        } catch (error) {
+          showStatus("Submission did not complete. Please email techs@hiteksol.com directly.", true);
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Submit Request";
+        }
+      });
+    })();
+  </script>
+  <script>
+ window.difyChatbotConfig = {
+  token: '4Jf4ayX9tkjJKown',
+  inputs: {
+    // You can define the inputs from the Start node here
+    // key is the variable name
+    // e.g.
+    // name: "NAME"
+  },
+  systemVariables: {
+    // user_id: 'YOU CAN DEFINE USER ID HERE',
+    // conversation_id: 'YOU CAN DEFINE CONVERSATION ID HERE, IT MUST BE A VALID UUID',
+  },
+  userVariables: {
+    // avatar_url: 'YOU CAN DEFINE USER AVATAR URL HERE',
+    // name: 'YOU CAN DEFINE USER NAME HERE',
+  },
+ }
+</script>
+<script
+ src="https://udify.app/embed.min.js"
+ id="4Jf4ayX9tkjJKown"
+ defer>
+</script>
+<style>
+  #dify-chatbot-bubble-button {
+    background-color: #1C64F2 !important;
+  }
+  #dify-chatbot-bubble-window {
+    width: 24rem !important;
+    height: 40rem !important;
+  }
+</style>
+</body>
+</html>
