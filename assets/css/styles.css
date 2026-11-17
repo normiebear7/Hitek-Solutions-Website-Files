@@ -374,6 +374,11 @@ a {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.strip .btn-secondary {
+  background: #fff;
+  color: var(--brand);
+}
+
 .site-footer {
   margin-top: 2.6rem;
   background: linear-gradient(120deg, #102326, #1a2f34);
